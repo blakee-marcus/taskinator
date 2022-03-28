@@ -5,6 +5,8 @@ var createTaskHandler = function(event) {
 
     event.preventDefault();
 
+    var taskNameInput = document.querySelector("input[name='task-name']");
+    
     var listItemEl = document.createElement("li");
     listItemEl.className = "task-item";
     listItemEl.textContent = "This is a new task.";
